@@ -1,0 +1,261 @@
+body {
+  background-color: hsl(36, 100%, 99%);
+  font-family: inter;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: space-evenly;
+  padding: 70px 100px;
+  position: relative;
+}
+
+sidebar {
+  width: 0px;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  border-left: 1px solid black;
+
+  transition: width 0.50s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.nav-menu {
+  display: none;
+  position: absolute;
+  right: 30px;
+  z-index: 101;
+}
+
+.navigations {
+  display: flex;
+  gap: 50px;
+}
+
+.navigations ul {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.2rem;
+}
+
+.navigations ul a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%)
+}
+
+.navigations ul a:active {
+  color:hsl(35, 77%, 62%);
+}
+
+section {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  height: 75%;
+}
+
+main {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+aside {
+  background-color: rgb(29, 29, 29);
+  width:30%;
+}
+
+main img {
+  width: 100%;
+}
+
+.text-container {
+  display: flex;
+}
+
+.text-container .title {
+  flex: 1;
+}
+
+.text-container .title h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  margin: 0px;
+  width: 90%;
+}
+
+.text-container .content {
+  flex: 1;
+}
+
+.text-container .content p {
+  font-size: 1.2rem;
+  margin: 0px;
+  line-height: 30px;
+  margin-bottom: 2.5rem;
+}
+
+.text-container .content button {
+  color: white;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  padding: 1.2rem 2rem;
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+
+  transition: all 0.15s;
+}
+
+.text-container .content button:hover {
+  background-color: hsl(5, 63%, 54%);
+}
+
+.text-container .content button:active {
+  background-color: black;
+}
+
+aside {
+  padding: 1.5rem 1.5rem;
+  color: white;
+}
+
+article {
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+  margin-bottom: 3dvb;
+}
+
+aside h1 {
+  color:hsl(35, 77%, 62%);
+  font-size: 3rem;
+  margin: 0px;
+}
+
+aside h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+aside h2:active {
+  color:hsl(35, 77%, 62%);
+}
+
+aside p {
+  font-size: 1.2rem;
+  color: hsl(233, 8%, 79%);
+  padding-bottom: 20px;
+  line-height: 32px;
+}
+
+.other-topics{ 
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.other-topics article {
+  flex: 1;
+  border-bottom: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+
+.other-topics img {
+  height: 100%;
+}
+
+.other-topics article h1 {
+  margin: 0px 0px 6px;
+  font-size: 2.5rem;
+  color:hsl(233, 8%, 79%);
+  padding: 0px;
+}
+
+.other-topics .text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.other-topics article h2 {
+  margin: 0px;
+}
+
+.other-topics article p {
+  line-height: 1.7rem;
+  font-size: 15px;
+  color: hsl(236, 13%, 42%);
+}
+
+
+@media screen and (max-width: 426px) {
+
+  body,
+  section,
+  main,
+  .text-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  body {
+    margin: 0px;
+    gap: 30px;
+    padding: 40px 20px 20px;
+  }
+
+  header {
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: inline;
+  }
+
+  .navigations {
+    display: none;
+  }
+
+  section {
+    align-items: center;
+    gap: 80px;
+  }
+
+  .text-container .content p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  aside {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .other-topics {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .other-topics article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .other-topics article img {
+    width: 35%;
+  }
+}
