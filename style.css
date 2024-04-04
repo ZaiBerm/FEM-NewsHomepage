@@ -275,6 +275,7 @@ aside p {
   .other-topics {
     flex-direction: column;
     gap: 20px;
+    margin-top: 60px;
   }
 
   .other-topics article {

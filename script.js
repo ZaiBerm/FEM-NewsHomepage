@@ -1,14 +1,14 @@
 
 window.addEventListener("DOMContentLoaded", () => {
-  let bgimage = document.querySelector(".background");
-  if (window.innerWidth < 427)
+  let bgimage = document.querySelector(".main-background");
+  if (window.innerWidth <= 500)
   {
-    bgimage.src="./assets/images/image-web-3-mobile.jpg"
+    bgimage.src="./assets/images/image-web-3-mobile.jpg";
   }
 })
 
-let nav_btn = document.querySelector(".nav-menu");
 
+let nav_btn = document.querySelector(".nav-menu");
 nav_btn.addEventListener("click", ()=> {
   let sidebar = document.querySelector("sidebar");
   let sidenav = document.querySelector(".side-navigations");
