@@ -9,17 +9,44 @@ body {
   position: relative;
 }
 
+.dark-transparent {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: transparent;
+
+  transition: all 0.5s;
+}
+
 sidebar {
-  width: 0px;
   background-color: white;
   position: absolute;
   right: 0px;
   top: 0px;
   bottom: 0px;
   height: 100%;
-  border-left: 1px solid black;
 
-  transition: width 0.50s;
+  transition: width 0.5s;
+}
+
+.side-navigations {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+
+  display: none;
+}
+
+.side-navigations ul a{
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  font-size: 1.4rem;
+}
+
+.side-navigations ul a:active {
+  color:hsl(35, 77%, 62%);
 }
 
 header {
